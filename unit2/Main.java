@@ -49,7 +49,10 @@ public class Main {
                             System.out.print("Enter issue Number: ");
                             int issueNumber = scanner.nextInt();
                             scanner.nextLine();
-                            Journal journal = new Journal(id, namePublisher, quanlity, issueNumber);
+                            System.out.println("Enter month of issue");
+                            int monthOfIssue = scanner.nextInt();
+                            scanner.nextLine();
+                            Journal journal = new Journal(id, namePublisher, quanlity, issueNumber, monthOfIssue);
                             manageDocument.addDocument(journal);
                             System.out.println(journal.toString());
                             break;
